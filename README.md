@@ -1,4 +1,4 @@
-# recon-sub
+```markdown
 # Recon Script - Automated Subdomain Enumeration and Reconnaissance
 
 This bash script automates the process of subdomain enumeration, scanning, and web reconnaissance. It utilizes several open-source tools to gather information about a given domain and save results in an organized folder structure. This script is ideal for security researchers, penetration testers, and bug bounty hunters.
@@ -73,4 +73,51 @@ go get -u github.com/edoardottt/waybackrobots
 
 # Install FFUF
 go get -u github.com/ffuf/ffuf
+```
 
+## Usage
+
+1. Make the script executable:
+
+```bash
+chmod +x recon.sh
+```
+
+2. Run the script by passing a domain name as an argument:
+
+```bash
+./recon.sh example.com
+```
+
+This will create a directory structure under the provided domain name:
+
+```
+example.com/
+│
+├── subdomains/   # Subdomain enumeration results
+├── scans/        # Results from directory and vhost discovery
+├── screenshots/  # Screenshots of alive subdomains
+├── js/           # Extracted JS files from subdomains
+├── urls/         # Discovered URLs
+```
+
+## Output
+
+- **Subdomains:** Found subdomains from multiple sources.
+- **Screenshots:** Captured screenshots of alive subdomains.
+- **JavaScript Files:** JS files extracted from subdomains.
+- **URLs:** URLs and endpoints extracted from JS files and other sources.
+- **Directory Discovery:** Discovered directories and virtual hosts.
+
+## Notes
+
+- Make sure you have all dependencies installed before running the script.
+- For better results, ensure the `resolvers.txt` file is updated with valid DNS resolvers in your system for MassDNS.
+
+## Disclaimer
+
+This script is intended for legal use only. Ensure you have proper authorization to scan the domain(s) before using this tool.
+
+```
+
+This README provides a brief overview of the script, its dependencies, how to install them, usage instructions, and legal notes, all in a format common to GitHub projects.
