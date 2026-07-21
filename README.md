@@ -77,9 +77,7 @@ go get -u github.com/ffuf/ffuf
 
 1. Make the script executable:
 
-```bash
-chmod +x recon.sh
-`
+`chmod +x recon.sh`
 ```
 
 2. Run the script by passing a domain name as an argument:
