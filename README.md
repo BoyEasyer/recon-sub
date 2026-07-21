@@ -1,4 +1,3 @@
-```markdown
 # Recon Script - Automated Subdomain Enumeration and Reconnaissance
 
 This bash script automates the process of subdomain enumeration, scanning, and web reconnaissance. It utilizes several open-source tools to gather information about a given domain and save results in an organized folder structure. This script is ideal for security researchers, penetration testers, and bug bounty hunters.
@@ -73,7 +72,6 @@ go get -u github.com/edoardottt/waybackrobots
 
 # Install FFUF
 go get -u github.com/ffuf/ffuf
-```
 
 ## Usage
 
